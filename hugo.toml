@@ -21,6 +21,10 @@ ignoreErrors = ["error-disable-taxonomy"]
   blog = "/:slug/"
   tags = "/blog/:slug"
 
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
+
 [params]
   # The "description" of your website. This is used in the meta data of your generated html.
   description = "Hugo + Bear = :heart:"
@@ -60,7 +64,7 @@ ignoreErrors = ["error-disable-taxonomy"]
 # https://gohugo.io/configuration/markup/#highlight
 [markup]
   [markup.highlight]
-    style = 'friendly'
+    style = 'monokai'
     lineNos = true
     lineNumbersInTable = false
     codeFences = true
